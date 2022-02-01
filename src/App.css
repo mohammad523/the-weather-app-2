@@ -1,38 +1,186 @@
-.App {
+.row {
+  list-style: none;
+  display: flex;
+  background-color: rgba(255,255,255,.4);
+  border-radius: 20px;
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 20px auto;
+  font-size: 10px;
+}
+
+li {
+  /* padding: 20px 0; */
+}
+
+body {
+  background-image: url(https://i.imgur.com/XtHYRF9.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.today{
+  background-color: rgba(255,255,255,.4);
+  border-radius: 20px;
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.smallImages {
+  width: 50%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fiveDayRows {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+span {
+  vertical-align: middle;
+  font-size: 13px;
+  padding: 15px
+}
+
+.largeImage {
+  width: 200px;
+  height: auto;
+}
+
+.city {
+  padding-top: 30px;
+}
+
+.minmax {
+  list-style: none;
+  /* display: flex; */
+  justify-content:  ;
+  padding: 0
+}
+.minmax li{
+  /* padding: 30px 0; */
+}
+
+.formList {
+  list-style: none;
+  background-color: rgba(255,255,255,.4);
+  border-radius: 20px;
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.formList ul{
+  list-style: none;
+  padding: 0;
+  font-size: 20px
+}
+
+.humidity {
+  padding-bottom: 20px;
+}
+
+.FiveDay h2{
+  text-align: center;
+  
+
+}
+
+.Logo{
+  border: 2px solid black;
+  background-color: darkblue;
   color: white;
+  padding: 10px;
+  width: fit-content;
+  font-size: 15px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutSection{
+  background-color: rgba(255,255,255,.4);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 30px;
+}
+.aboutSection h1 {
+  padding-top: 30px;
+}
+.aboutSection * {
+  padding: 10px;
+}
+.aboutLink {
+  text-decoration:none;
+  color: gray;
+  /* text-align: center; */
+  font-size: 8px;
+  font-weight: 100;
+  padding: 10px;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media screen and (min-width: 1000px) {
+  .Logo{
+    margin: 25px 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: 700px;
+  }
+  .today {
+    grid-column: 3/4;
+  }
+  .formList{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+  }
+  .FiveDay {
+    grid-column: 1/2/1/2;
+    grid-row: 1/2;
+
+  }
+  span {
+    
+  }
+  .FiveDay{
+    padding-top:100px;
+  }
+  .FiveDay h2{
+    display: none;
+  }
+  form {
+    padding-top: 60px;
+    border-radius: 10px;
+  }
+  .zipList li{
+    font-size: 40px;
+    padding: 10px
+  }
+  .temp {
+    font-size: 50px;
+    margin: 20px;
+  }
+  .humidity {
+    padding: 20px;
+  }
+  .minmax{
+    padding: 15px;
+  }
+  .fiveDayRows li{
+    padding: 8px 2px;
   }
 }
