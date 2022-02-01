@@ -23,7 +23,7 @@ function Weather() {
 
 	// this makes the api call
 	const makeApiCall = async (input) => {
-		const weatherUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${input}&units=imperial&appid=0ab144033f62031c07bcf88c9cb4219c`;
+		const weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?zip=${input}&units=imperial&appid=0ab144033f62031c07bcf88c9cb4219c`;
 		const res = await fetch(weatherUrl);
 		const json = await res.json();
 		let data = json;
